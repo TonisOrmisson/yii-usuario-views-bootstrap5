@@ -9,13 +9,14 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\User;
 use Da\User\Widget\ConnectWidget;
 use yii\helpers\Html;
 
 /**
  * @var yii\web\View           $this
  * @var yii\widgets\ActiveForm $form
- * @var \Da\User\Model\User    $user
+ * @var User    $user
  */
 
 $this->title = Yii::t('usuario', 'Networks');
@@ -51,13 +52,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 <table class="table">
                     <?php foreach ($auth->getClients() as $client): ?>
                         <tr>
-                            <td style="width: 32px; vertical-align: middle">
+                            <td style="width: 32px; vertical-align: middle;">
                                 <?= Html::tag('span', '', ['class' => 'auth-icon ' . $client->getName()]) ?>
                             </td>
-                            <td style="vertical-align: middle">
+                            <td style="vertical-align: middle;">
                                 <strong><?= $client->getTitle() ?></strong>
                             </td>
-                            <td style="width: 120px">
+                            <td style="width: 120px;">
                                 <?= $auth->isConnected($client) ?
                                     Html::a(
                                         Yii::t('usuario', 'Disconnect'),

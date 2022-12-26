@@ -9,12 +9,15 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\Token;
+use Da\User\Model\User;
+use Da\User\Module;
 use yii\helpers\Html;
 
 /**
- * @var \Da\User\Module      $module
- * @var \Da\User\Model\User  $user
- * @var \Da\User\Model\Token $token
+ * @var Module      $module
+ * @var User  $user
+ * @var Token $token
  * @var bool                 $showPassword
  */
 

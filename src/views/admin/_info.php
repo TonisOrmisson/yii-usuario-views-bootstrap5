@@ -11,9 +11,11 @@
 
 /**
  * @var yii\web\View $this
- * @var \Da\User\Model\User $user
+ * @var User $user
  * @var Da\User\Module $module
  */
+
+use Da\User\Model\User;
 
 ?>
 

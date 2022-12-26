@@ -10,11 +10,14 @@
  */
 
 /**
- * @var \Da\User\Model\Permission $model
+ * @var Permission $model
  * @var yii\web\View $this
  * @var string[] $unassignedItems
- * @var \Da\User\Module $module
+ * @var Module $module
  */
+
+use Da\User\Model\Permission;
+use Da\User\Module;
 
 $this->title = Yii::t('usuario', 'Update permission');
 $this->params['breadcrumbs'][] = $this->title;

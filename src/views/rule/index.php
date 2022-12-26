@@ -1,15 +1,17 @@
 <?php
 
+use Da\User\Module;
+use Da\User\Search\RuleSearch;
+use yii\data\ActiveDataProvider;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\helpers\Url;
-use yii\rbac\Rule;
 
 /**
- * @var \yii\data\ActiveDataProvider $dataProvider
- * @var \Da\User\Search\RuleSearch $searchModel
+ * @var ActiveDataProvider $dataProvider
+ * @var RuleSearch $searchModel
  * @var yii\web\View $this
- * @var \Da\User\Module $module
+ * @var Module $module
  */
 
 $this->title = Yii::t('usuario', 'Rules');

@@ -9,14 +9,17 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Form\RegistrationForm;
+use Da\User\Model\User;
+use Da\User\Module;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View                   $this
- * @var \Da\User\Form\RegistrationForm $model
- * @var \Da\User\Model\User            $user
- * @var \Da\User\Module                $module
+ * @var RegistrationForm $model
+ * @var User            $user
+ * @var Module                $module
  */
 
 $this->title = Yii::t('usuario', 'Sign up');

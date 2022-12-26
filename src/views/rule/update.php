@@ -10,11 +10,14 @@
  */
 
 /**
- * @var \Da\User\Model\Rule $model
+ * @var Rule $model
  * @var yii\web\View $this
  * @var string[] $unassignedItems
- * @var \Da\User\Module $module
+ * @var Module $module
  */
+
+use Da\User\Model\Rule;
+use Da\User\Module;
 
 $this->title = Yii::t('usuario', 'Update rule');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('usuario', 'Rules'), 'url' => ['index']];

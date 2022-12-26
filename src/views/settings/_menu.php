@@ -9,18 +9,22 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\User;
+use Da\User\Module;
+use yii\authclient\Collection;
 use yii\helpers\Html;
+use yii\web\Application;
 use yii\widgets\Menu;
 
-/** @var \Da\User\Module $module */
+/** @var Module $module */
 $module = Yii::$app->getModule('user');
 
-/** @var \yii\web\Application $app */
+/** @var Application $app */
 $app = Yii::$app;
 
-/** @var \Da\User\Model\User $user */
+/** @var User $user */
 $user = $app->user->identity;
-/** @var \yii\authclient\Collection $authClientCollection */
+/** @var Collection $authClientCollection */
 $authClientCollection = $app->get('authClientCollection');
 $networksVisible = count($authClientCollection->clients) > 0;
 

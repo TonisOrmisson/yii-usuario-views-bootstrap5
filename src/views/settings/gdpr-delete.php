@@ -8,10 +8,11 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Form\GdprDeleteForm;
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
 
-/** @var  \Da\User\Form\GdprDeleteForm $model **/
+/** @var  GdprDeleteForm $model **/
 ?>
 
 <div class="row">

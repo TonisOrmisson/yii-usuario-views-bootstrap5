@@ -10,12 +10,14 @@
  */
 
 /**
- * @var \yii\data\ActiveDataProvider $dataProvider
- * @var \Da\User\Search\PermissionSearch $searchModel
+ * @var ActiveDataProvider $dataProvider
+ * @var PermissionSearch $searchModel
  * @var yii\web\View $this
  * @var Da\User\Module $module
  */
 
+use Da\User\Search\PermissionSearch;
+use yii\data\ActiveDataProvider;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\helpers\Url;

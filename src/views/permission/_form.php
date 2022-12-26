@@ -10,13 +10,14 @@
  */
 
 use Da\User\Helper\AuthHelper;
+use Da\User\Model\Permission;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\select2\Select2;
 
 /**
- * @var \Da\User\Model\Permission $model
+ * @var Permission $model
  * @var yii\web\View $this
  * @var string[] $unassignedItems
  */

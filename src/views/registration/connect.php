@@ -9,14 +9,16 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\SocialNetworkAccount;
+use Da\User\Model\User;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View                        $this
  * @var yii\widgets\ActiveForm              $form
- * @var \Da\User\Model\User                 $model
- * @var \Da\User\Model\SocialNetworkAccount $account
+ * @var User                 $model
+ * @var SocialNetworkAccount $account
  */
 
 $this->title = Yii::t('usuario', 'Sign in');

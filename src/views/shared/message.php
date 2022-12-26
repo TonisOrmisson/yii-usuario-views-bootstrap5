@@ -11,14 +11,15 @@
 
 /**
  * @var yii\web\View $this
- * @var \Da\User\Module $module
+ * @var Module $module
  * @var string $title
  */
 
-$this->title = $title;
-?>
+use Da\User\Module;
 
-<?= $this->render(
+$this->title = $title;
+
+$this->render(
     '/shared/_alert',
     [
         'module' => $module,

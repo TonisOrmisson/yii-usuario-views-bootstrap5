@@ -10,14 +10,18 @@
  */
 
 /**
- * @var \Da\User\Model\Rule $model
+ * @var Rule $model
  * @var yii\web\View $this
  * @var string[] $unassignedItems
  */
+
+use Da\User\Model\Rule;
+use Da\User\Module;
+
 $this->title = Yii::t('usuario', 'Create new rule');
 $this->params['breadcrumbs'][] = $this->title;
 
-/** @var \Da\User\Module $module */
+/** @var Module $module */
 $module = Yii::$app->getModule('user');
 
 ?>

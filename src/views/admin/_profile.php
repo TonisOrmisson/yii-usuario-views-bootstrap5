@@ -9,13 +9,15 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\Profile;
+use Da\User\Model\User;
 use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
 
 /**
  * @var yii\web\View           $this
- * @var \Da\User\Model\User    $user
- * @var \Da\User\Model\Profile $profile
+ * @var User    $user
+ * @var Profile $profile
  * @var Da\User\Module $module
  */
 

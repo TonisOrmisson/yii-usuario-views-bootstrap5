@@ -45,7 +45,7 @@ use kartik\select2\Select2;
 <?= Html::activeHiddenInput($model, 'user_id') ?>
 
 
-<?= $form->field($model, 'items')->widget(Select2::classname(), [
+<?= $form->field($model, 'items')->widget(Select2::class, [
     'data' => $availableItems,
     'options' => [
         'multiple' => true

@@ -1,7 +1,9 @@
 <?php
+
+use yii\base\DynamicModel;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-/** @var \yii\base\DynamicModel $model */
+/** @var DynamicModel $model */
 /** @var string $gdpr_consent_hint */
 ?>
 

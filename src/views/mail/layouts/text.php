@@ -10,9 +10,12 @@
  */
 
 /**
- * @var \yii\web\View $this
+ * @var View $this
  * @var string $content main view render result
  */
+
+use yii\web\View;
+
 ?>
 
 <?php $this->beginPage() ?>

@@ -23,7 +23,7 @@
 
 <div class="row">
     <div class="offset-md-3 col-md-6 text-center">
-        <img id="qrCode" src="<?= $uri ?>"/>
+        <img id="qrCode" alt="qrCode" src="<?= $uri ?>"/>
     </div>
 </div>
 <div class="row">

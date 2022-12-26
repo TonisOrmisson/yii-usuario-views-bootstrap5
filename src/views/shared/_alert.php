@@ -10,12 +10,13 @@
  */
 
 use yii\bootstrap5\Alert;
+use yii\web\Application;
 
 /**
  * @var yii\web\View $this
  * @var Da\User\Module $module
  */
-/** @var \yii\web\Application $app */
+/** @var Application $app */
 $app = Yii::$app;
 
 ?>

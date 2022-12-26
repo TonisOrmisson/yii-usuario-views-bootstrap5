@@ -9,13 +9,14 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\User;
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Nav;
 use yii\helpers\Html;
 
 /**
  * @var yii\web\View        $this
- * @var \Da\User\Model\User $user
+ * @var User $user
  */
 
 $this->title = Yii::t('usuario', 'Create a user account');

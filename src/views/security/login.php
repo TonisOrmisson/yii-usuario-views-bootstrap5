@@ -9,14 +9,16 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Form\LoginForm;
+use Da\User\Module;
 use Da\User\Widget\ConnectWidget;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View            $this
- * @var \Da\User\Form\LoginForm $model
- * @var \Da\User\Module         $module
+ * @var LoginForm $model
+ * @var Module         $module
  */
 
 $this->title = Yii::t('usuario', 'Sign in');

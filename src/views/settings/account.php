@@ -9,6 +9,9 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Form\SettingsForm;
+use Da\User\Model\User;
+use Da\User\Module;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
@@ -16,17 +19,17 @@ use yii\widgets\ActiveForm;
 /**
  * @var yii\web\View               $this
  * @var yii\widgets\ActiveForm     $form
- * @var \Da\User\Form\SettingsForm $model
+ * @var SettingsForm $model
  */
 
 $this->title = Yii::t('usuario', 'Account settings');
 $this->params['breadcrumbs'][] = $this->title;
 
-/** @var \Da\User\Module $module */
+/** @var Module $module */
 $module = Yii::$app->getModule('user');
 $user = $model->getUser();
 ?>
-<?php if($user instanceof \Da\User\Model\User):?>
+<?php if($user instanceof User):?>
 
     <div class="clearfix"></div>
 
@@ -167,7 +170,7 @@ $user = $model->getUser();
 $('#tfmodal')
     .on('show.bs.modal', function(){
         if(!$('img#qrCode').length) {
-            $(this).find('.modal-body').load('{$uri}');
+            $(this).find('.modal-body').load('$uri');
         } else {
             $('input#tfcode').val('');
         }
@@ -179,7 +182,7 @@ $(document)
        var btn = $(this);
        btn.prop('disabled', true);
        
-       $.getJSON('{$verify}', {code: $('#tfcode').val()}, function(data){
+       $.getJSON('$verify', {code: $('#tfcode').val()}, function(data){
           btn.prop('disabled', false);
           if(data.success) {
               $('#enable_tf_btn, #disable_tf_btn').toggleClass('hide');

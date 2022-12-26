@@ -10,6 +10,7 @@
  */
 
 use Da\User\Helper\TimezoneHelper;
+use Da\User\Model\Profile;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -17,7 +18,7 @@ use yii\widgets\ActiveForm;
 /**
  * @var yii\web\View           $this
  * @var yii\widgets\ActiveForm $form
- * @var \Da\User\Model\Profile $model
+ * @var Profile $model
  */
 
 $this->title = Yii::t('usuario', 'Profile settings');
@@ -71,7 +72,7 @@ $timezoneHelper = $model->make(TimezoneHelper::class);
                     ->hint(
                         Html::a(
                             Yii::t('usuario', 'Change your avatar at Gravatar.com'),
-                            'http://gravatar.com',
+                            'https://gravatar.com',
                             ['target' => '_blank']
                         )
                     ) ?>

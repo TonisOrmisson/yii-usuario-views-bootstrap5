@@ -11,8 +11,11 @@
 
 /**
  * @var yii\widgets\ActiveForm $form
- * @var \Da\User\Model\User    $user
+ * @var User    $user
  */
+
+use Da\User\Model\User;
+
 ?>
 
 <?= $form->field($user, 'email')->textInput(['maxlength' => 255]) ?>

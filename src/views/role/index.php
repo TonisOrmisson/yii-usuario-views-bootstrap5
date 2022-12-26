@@ -9,15 +9,18 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Module;
+use Da\User\Search\RoleSearch;
+use yii\data\ActiveDataProvider;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\helpers\Url;
 
 /**
- * @var \yii\data\ActiveDataProvider $dataProvider
- * @var \Da\User\Search\RoleSearch $searchModel
+ * @var ActiveDataProvider $dataProvider
+ * @var RoleSearch $searchModel
  * @var yii\web\View $this
- * @var \Da\User\Module $module
+ * @var Module $module
  */
 
 $this->title = Yii::t('usuario', 'Roles');

@@ -10,9 +10,13 @@
  */
 
 /**
- * @var \Da\User\Model\User $model
- * @var \Da\User\Model\Token $token
+ * @var User $model
+ * @var Token $token
  */
+
+use Da\User\Model\Token;
+use Da\User\Model\User;
+
 ?>
 <?= Yii::t('usuario', 'Hello') ?>,
 

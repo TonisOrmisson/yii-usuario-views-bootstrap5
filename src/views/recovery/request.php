@@ -9,13 +9,14 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Form\RecoveryForm;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View               $this
  * @var yii\widgets\ActiveForm     $form
- * @var \Da\User\Form\RecoveryForm $model
+ * @var RecoveryForm $model
  */
 
 $this->title = Yii::t('usuario', 'Recover your password');

@@ -9,11 +9,13 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use Da\User\Model\Profile;
 use yii\helpers\Html;
+use yii\web\View;
 
 /**
- * @var \yii\web\View          $this
- * @var \Da\User\Model\Profile $profile
+ * @var View          $this
+ * @var Profile $profile
  */
 
 $this->title = empty($profile->name) ? Html::encode($profile->user->username) : Html::encode($profile->name);
@@ -36,19 +38,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 <ul style="padding: 0; list-style: none outside none;">
                     <?php if (!empty($profile->location)): ?>
                         <li>
-                            <i class="fas fa-map-marker text-muted"></i>
+                            <em class="fas fa-map-marker text-muted"></em>
                             <?= Html::encode($profile->location) ?>
                         </li>
                     <?php endif; ?>
                     <?php if (!empty($profile->website)): ?>
                         <li>
-                            <i class="fas fa-globe text-muted"></i>
+                            <em class="fas fa-globe text-muted"></em>
                             <?= Html::a(Html::encode($profile->website), Html::encode($profile->website)) ?>
                         </li>
                     <?php endif; ?>
                     <?php if (!empty($profile->public_email)): ?>
                         <li>
-                            <i class="fas fa-envelope text-muted"></i>
+                            <em class="fas fa-envelope text-muted"></em>
                             <?= Html::a(
                                 Html::encode($profile->public_email),
                                 'mailto:' .
@@ -58,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </li>
                     <?php endif; ?>
                     <li>
-                        <i class="fas fa-stopwatch text-muted"></i>
+                        <em class="fas fa-stopwatch text-muted"></em>
                         <?= Yii::t('usuario', 'Joined on {0, date}', [$profile->user->created_at]) ?>
                     </li>
                 </ul>
