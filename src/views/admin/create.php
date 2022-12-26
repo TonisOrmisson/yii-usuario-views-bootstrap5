@@ -9,8 +9,8 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-use yii\bootstrap4\ActiveForm;
-use yii\bootstrap4\Nav;
+use yii\bootstrap5\ActiveForm;
+use yii\bootstrap5\Nav;
 use yii\helpers\Html;
 
 /**
@@ -99,7 +99,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <?= $this->render('/admin/_user', ['form' => $form, 'user' => $user]) ?>
 
                                 <div class="form-group">
-                                    <div class="col-lg-offset-3 col-lg-9">
+                                    <div class="offset-lg-3 col-lg-9">
                                         <?= Html::submitButton(
                                             Yii::t('usuario', 'Save'),
                                             ['class' => 'btn btn-block btn-success']

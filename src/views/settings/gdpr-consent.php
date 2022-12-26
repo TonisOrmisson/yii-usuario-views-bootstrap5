@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="row">
-    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
         <?php $form = ActiveForm::begin(
             [
                 'id' => $model->formName(),

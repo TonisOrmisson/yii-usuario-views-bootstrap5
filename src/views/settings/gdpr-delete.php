@@ -15,7 +15,7 @@ use yii\helpers\Html;
 ?>
 
 <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 offset-md-3">
         <div class="panel panel-danger">
             <div class="panel-heading">
                 <h3 class="panel-title">
@@ -35,7 +35,7 @@ use yii\helpers\Html;
                 $form = ActiveForm::begin([])
                 ?>
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
+                    <div class="col-md-6 offset-md-3">
                         <?= $form->field($model, 'password')->passwordInput() ?>
                     </div>
                 </div>

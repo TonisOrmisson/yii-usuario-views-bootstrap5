@@ -22,12 +22,12 @@
 </div>
 
 <div class="row">
-    <div class="col-md-offset-3 col-md-6 text-center">
+    <div class="offset-md-3 col-md-6 text-center">
         <img id="qrCode" src="<?= $uri ?>"/>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-offset-3 col-md-6 text-center">
+    <div class="offset-md-3 col-md-6 text-center">
         <div class="input-group">
             <input type="text" class="form-control" id="tfcode" placeholder="<?= Yii::t('usuario', 'Two factor authentication code') ?>"/>
             <span class="input-group-btn">

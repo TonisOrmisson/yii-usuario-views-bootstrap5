@@ -47,7 +47,7 @@ $user = $model->getUser();
                         'id' => $model->formName(),
                         'options' => ['class' => 'form-horizontal'],
                         'fieldConfig' => [
-                            'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",
+                            'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"offset-sm-3 col-lg-9\">{error}\n{hint}</div>",
                             'labelOptions' => ['class' => 'col-lg-3 control-label'],
                         ],
                         'enableAjaxValidation' => true,
@@ -66,7 +66,7 @@ $user = $model->getUser();
                 <?= $form->field($model, 'current_password')->passwordInput() ?>
 
                 <div class="form-group">
-                    <div class="col-lg-offset-3 col-lg-9">
+                    <div class="offset-lg-3 col-lg-9">
                         <?= Html::submitButton(Yii::t('usuario', 'Save'), ['class' => 'btn btn-block btn-success']) ?>
                         <br>
                     </div>
