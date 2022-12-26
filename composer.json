@@ -1,0 +1,49 @@
+{
+    "name": "yii-usuario/yii-usuario-views-bootstrap5",
+    "description": "Bootstrap 5 views for 2amigos/yii-usuario",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "usuario",
+        "yii",
+        "yii2"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4.0",
+        "yiisoft/yii2-bootstrap5": "^2.0",
+        "2amigos/yii2-usuario": "dev-master",
+        "kartik-v/yii2-widget-select2": "^2.2"
+
+    },
+    "require-dev": {
+        "phpmd/phpmd": "@stable",
+        "phpstan/phpstan": "^1.9"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        },
+        "preferred-install": {
+            "*": "auto"
+        },
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        },
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
