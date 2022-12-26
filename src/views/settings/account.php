@@ -37,11 +37,11 @@ $user = $model->getUser();
         <?= $this->render('/settings/_menu') ?>
     </div>
     <div class="col-md-9">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
+        <div class="card ">
+            <div class="card-header">
+                <h3 class="m-0"><?= Html::encode($this->title) ?></h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
                 <?php $form = ActiveForm::begin(
                     [
                         'id' => $model->formName(),
@@ -97,11 +97,11 @@ $user = $model->getUser();
                     </div>
                 </div>
             </div>
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><?= Yii::t('usuario', 'Two Factor Authentication (2FA)') ?></h3>
+            <div class="card card-info">
+                <div class="card-header">
+                    <h3 class="m-0"><?= Yii::t('usuario', 'Two Factor Authentication (2FA)') ?></h3>
                 </div>
-                <div class="panel-body">
+                <div class="card-body">
                     <p>
                         <?= Yii::t('usuario', 'Two factor authentication protects you in case of stolen credentials') ?>.
                     </p>
@@ -131,11 +131,11 @@ $user = $model->getUser();
             </div>
         <?php endif; ?>
         <?php if ($model->module->allowAccountDelete): ?>
-            <div class="panel panel-danger">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><?= Yii::t('usuario', 'Delete account') ?></h3>
+            <div class="card card-danger">
+                <div class="card-header">
+                    <h3 class="m-0"><?= Yii::t('usuario', 'Delete account') ?></h3>
                 </div>
-                <div class="panel-body">
+                <div class="card-body">
                     <p>
                         <?= Yii::t('usuario', 'Once you delete your account, there is no going back') ?>.
                         <?= Yii::t('usuario', 'It will be deleted forever') ?>.

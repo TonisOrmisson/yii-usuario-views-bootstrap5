@@ -35,11 +35,11 @@ $timezoneHelper = $model->make(TimezoneHelper::class);
         <?= $this->render('_menu') ?>
     </div>
     <div class="col-md-9">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
+        <div class="card ">
+            <div class="card-header">
+                <h3 class="m-0"><?= Html::encode($this->title) ?></h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
                 <?php $form = ActiveForm::begin(
                     [
                         'id' => $model->formName(),
